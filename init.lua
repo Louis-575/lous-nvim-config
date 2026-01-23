@@ -26,6 +26,8 @@ vim.keymap.set("n", " e", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explo
 
 vim.keymap.set("n", " t", "<cmd>Telescope<CR>", { desc = "Toggle telescope", silent = true, })
 
+vim.keymap.set("n", " ni", function() vim.cmd("edit " .. vim.fn.stdpath("config") .. "/init.lua") end, {desc = "Edit init.lua",})
+
 ------------------------------------------------------------
 -- Bootstrap lazy.nvim
 ------------------------------------------------------------
